@@ -1,0 +1,11 @@
+{
+  "type": "ideao:sea_crafting",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_axe"
+    }
+  ],
+  "output": {
+    "item": "ideao:aquamarine_axe"
+  }
+}

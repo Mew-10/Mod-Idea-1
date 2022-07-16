@@ -1,0 +1,11 @@
+{
+  "type": "ideao:sea_crafting",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_pickaxe"
+    }
+  ],
+  "output": {
+    "item": "ideao:aquamarine_pickaxe"
+  }
+}

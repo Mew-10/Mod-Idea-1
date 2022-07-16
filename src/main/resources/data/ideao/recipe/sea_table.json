@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:crafting_table"
+    },
+    "X": {
+      "item": "ideao:aquamarine"
+    }
+  },
+  "result": {
+    "item": "ideao:sea_table"
+  }
+}

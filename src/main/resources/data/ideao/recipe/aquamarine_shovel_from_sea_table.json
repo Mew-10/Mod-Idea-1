@@ -1,0 +1,11 @@
+{
+  "type": "ideao:sea_crafting",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_shovel"
+    }
+  ],
+  "output": {
+    "item": "ideao:aquamarine_shovel"
+  }
+}

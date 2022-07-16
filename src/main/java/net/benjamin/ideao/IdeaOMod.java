@@ -1,8 +1,10 @@
 package net.benjamin.ideao;
 
 import com.mojang.logging.LogUtils;
+import net.benjamin.ideao.block.ModBlocks;
 import net.benjamin.ideao.block.entity.ModBlockEntities;
 import net.benjamin.ideao.item.ModItems;
+import net.benjamin.ideao.recipe.ModRecipes;
 import net.benjamin.ideao.screen.ModMenuTypes;
 import net.benjamin.ideao.screen.SeaTableScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -38,8 +40,10 @@ public class IdeaOMod
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
         ModBlockEntities.register(eventBus);
         ModMenuTypes.register(eventBus);
+        ModRecipes.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
