@@ -1,6 +1,7 @@
 package net.benjamin.ideao.item;
 
 import net.benjamin.ideao.IdeaOMod;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,6 +29,19 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
     public static final RegistryObject<Item> AQUAMARINE_HOE = ITEMS.register("aquamarine_hoe",
             () -> new HoeItem(ModTiers.AQUAMARINE, 1, 1f,
+                    new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
+
+    public static final RegistryObject<Item> AQUAMARINE_HELMET = ITEMS.register("aquamarine_helmet",
+            () -> new ArmorItem(ModArmorMaterials.AQUAMARINE, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
+    public static final RegistryObject<Item> AQUAMARINE_CHESTPLATE = ITEMS.register("aquamarine_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.AQUAMARINE, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
+    public static final RegistryObject<Item> AQUAMARINE_LEGGING = ITEMS.register("aquamarine_leggings",
+            () -> new ArmorItem(ModArmorMaterials.AQUAMARINE, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
+    public static final RegistryObject<Item> AQUAMARINE_BOOTS = ITEMS.register("aquamarine_boots",
+            () -> new ArmorItem(ModArmorMaterials.AQUAMARINE, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
 
     public static void register(IEventBus eventBus) {
