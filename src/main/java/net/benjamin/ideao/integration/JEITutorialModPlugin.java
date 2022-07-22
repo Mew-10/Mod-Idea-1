@@ -6,6 +6,7 @@ import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.benjamin.ideao.IdeaOMod;
+import net.benjamin.ideao.recipe.ScienceTableRecipe;
 import net.benjamin.ideao.recipe.SeaTableRecipe;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
@@ -30,7 +31,11 @@ public class JEITutorialModPlugin implements IModPlugin {
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         RecipeManager rm = Objects.requireNonNull(Minecraft.getInstance().level).getRecipeManager();
+
         List<SeaTableRecipe> recipes = rm.getAllRecipesFor(SeaTableRecipe.Type.INSTANCE);
         registration.addRecipes(new RecipeType<>(SeaTableRecipeCategory.UID, SeaTableRecipe.class), recipes);
+
+        List<ScienceTableRecipe> srecipes = rm.getAllRecipesFor(ScienceTableRecipe.Type.INSTANCE);
+        registration.addRecipes(new RecipeType<>(ScienceTableRecipeCategory.UID, ScienceTableRecipe.class), recipes);
     }
 }
