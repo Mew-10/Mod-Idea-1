@@ -8,7 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModItems {
+public class ModItems{
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, IdeaOMod.MOD_ID);
 
@@ -32,7 +32,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
 
     public static final RegistryObject<Item> AQUAMARINE_HELMET = ITEMS.register("aquamarine_helmet",
-            () -> new ArmorItem(ModArmorMaterials.AQUAMARINE, EquipmentSlot.HEAD,
+            () -> new ModArmorItemA(ModArmorMaterials.AQUAMARINE, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
     public static final RegistryObject<Item> AQUAMARINE_CHESTPLATE = ITEMS.register("aquamarine_chestplate",
             () -> new ArmorItem(ModArmorMaterials.AQUAMARINE, EquipmentSlot.CHEST,
@@ -42,6 +42,19 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
     public static final RegistryObject<Item> AQUAMARINE_BOOTS = ITEMS.register("aquamarine_boots",
             () -> new ArmorItem(ModArmorMaterials.AQUAMARINE, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
+
+    public static final RegistryObject<Item> DIVEING_GEAR_HELMET = ITEMS.register("diveing_gear_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.DIVEING_GEAR, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
+    public static final RegistryObject<Item> DIVEING_GEAR_CHESTPLATE = ITEMS.register("diveing_gear_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.DIVEING_GEAR, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
+    public static final RegistryObject<Item> DIVEING_GEAR_LEGGING = ITEMS.register("diveing_gear_leggings",
+            () -> new ArmorItem(ModArmorMaterials.DIVEING_GEAR, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
+    public static final RegistryObject<Item> DIVEING_GEAR_BOOTS = ITEMS.register("diveing_gear_boots",
+            () -> new ArmorItem(ModArmorMaterials.DIVEING_GEAR, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTabs.IDEAO)));
 
     public static void register(IEventBus eventBus) {

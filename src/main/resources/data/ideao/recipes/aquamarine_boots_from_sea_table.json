@@ -1,0 +1,11 @@
+{
+  "type": "ideao:sea_crafting",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_boots"
+    }
+  ],
+  "output": {
+    "item": "ideao:aquamarine_boots"
+  }
+}

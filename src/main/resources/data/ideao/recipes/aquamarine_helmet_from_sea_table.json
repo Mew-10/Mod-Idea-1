@@ -1,0 +1,11 @@
+{
+  "type": "ideao:sea_crafting",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_helmet"
+    }
+  ],
+  "output": {
+    "item": "ideao:aquamarine_helmet"
+  }
+}

@@ -6,13 +6,18 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     AQUAMARINE("aquamarine", 40, new int[]{5, 8, 10, 4}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
-            2.0F, 0.0F, () -> Ingredient.of(ModItems.AQUAMARINE.get()));
+            2.0F, 0.0F, () -> Ingredient.of(ModItems.AQUAMARINE.get())),
+
+    DIVEING_GEAR("diveing_gear", 20, new int[]{2, 4, 5, 1}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
+            2.0F, 0.0F, () -> Ingredient.of(Items.COPPER_INGOT));
+
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;

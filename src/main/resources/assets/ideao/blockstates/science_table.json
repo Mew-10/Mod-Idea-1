@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ideao:block/science_table" },
+    "facing=east": { "model": "ideao:block/science_table", "y": 90 },
+    "facing=south": { "model": "ideao:block/science_table", "y": 180 },
+    "facing=west": { "model": "ideao:block/science_table", "y": 270 }
+  }
+}

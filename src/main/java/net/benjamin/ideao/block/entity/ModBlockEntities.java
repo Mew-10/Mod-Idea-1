@@ -17,6 +17,11 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(SeaTableBlockEntity::new,
                             ModBlocks.SEA_TABLE.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<ScienceTableBlockEntity>> SCIENCE_TABLE_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("science_table_block_entity", () ->
+                    BlockEntityType.Builder.of(ScienceTableBlockEntity::new,
+                            ModBlocks.SCIENCE_TABLE.get()).build(null));
+
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

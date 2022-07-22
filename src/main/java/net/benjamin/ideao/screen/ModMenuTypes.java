@@ -17,6 +17,9 @@ public class ModMenuTypes {
     public static final RegistryObject<MenuType<SeaTableMenu>> SEA_TABLE_MENU =
             registerMenuType(SeaTableMenu::new, "sea_table_menu");
 
+    public static final RegistryObject<MenuType<ScienceTableMenu>> SCIENCE_TABLE_MENU =
+            registerMenuType(ScienceTableMenu::new, "science_table_menu");
+
 
 
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,

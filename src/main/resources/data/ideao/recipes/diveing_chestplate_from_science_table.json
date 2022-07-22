@@ -1,0 +1,14 @@
+{
+  "type": "ideao:science",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_chestplate"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    }
+  ],
+  "output": {
+    "item": "ideao:diveing_gear_chestplate"
+  }
+}

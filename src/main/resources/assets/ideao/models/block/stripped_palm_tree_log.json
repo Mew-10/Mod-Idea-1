@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ideao:block/stripped_palm_tree_top",
+    "side": "ideao:block/stripped_palm_tree_log"
+  }
+}

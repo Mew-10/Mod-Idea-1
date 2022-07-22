@@ -14,6 +14,9 @@ public class ModRecipes {
     public static final RegistryObject<RecipeSerializer<SeaTableRecipe>> SEA_TABLE_SERIALIZER =
             SERIALIZERS.register("sea_crafting", () -> SeaTableRecipe.Serializer.INSTANCE);
 
+    public static final RegistryObject<RecipeSerializer<ScienceTableRecipe>> SCIENCE_TABLE_SERIALIZER =
+            SERIALIZERS.register("science", () -> ScienceTableRecipe.Serializer.INSTANCE);
+
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);
     }
